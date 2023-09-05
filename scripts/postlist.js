@@ -1,3 +1,5 @@
+
+//  sign up event
 function showsignup(){
     document.querySelector('.sign-up-form').style.top = "50%";
     document.querySelector('.sign-in-form').style.top = "-50%";
@@ -38,6 +40,8 @@ function hyperl(){
     document.querySelector('.overlay').style.opacity = "1";
     document.querySelector('.overlay').style.zIndex = "1";
 }
+
+// delete funtionality
 
 var item1 = document.querySelector('.item-a');
 var item2 = document.querySelector('.item-b');
@@ -84,6 +88,10 @@ function delpost5(){
 
 }
 
+// delete modal functionality
+
+// for no
+
 function closedelpost(){
     document.querySelector('.delete-post').style.top = "-100%";
     item1.classList.remove('remove');
@@ -94,6 +102,8 @@ function closedelpost(){
     document.querySelector('.overlay').style.opacity = "0";
     document.querySelector('.overlay').style.zIndex = "-1";
 }
+
+// for yes
 
 function confirmdel(){
     document.querySelector('.remove').remove();

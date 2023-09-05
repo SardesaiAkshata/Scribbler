@@ -11,6 +11,8 @@ body{
     height: 100vh;
 }
 
+    /*  Same header styling  */
+
 header{
     display: flex;
     align-items: center;
@@ -323,6 +325,3 @@ header{
 }
 
 
-
-
-/* for mobile */

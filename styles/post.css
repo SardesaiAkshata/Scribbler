@@ -212,6 +212,7 @@ header{
 
 .heading h2{
     font-family: sans-serif;
+
 }
 
 .sub-heading{
@@ -221,12 +222,19 @@ header{
     margin-top: 1%;
 }
 
+.sub-heading h5{
+    font-size: larger;
+    color: rgb(70, 70, 70);
+    font-family: 'Ubuntu mono';
+}
+
 .para{
     margin-top: 1%;   
 }
 
 .paragraph{
     font-size: small;
+    color: rgb(64, 64, 64);
 }
 
 .btns{
@@ -245,6 +253,8 @@ header{
 
 .like{
     margin-top: 1%;
+    color: grey;
+    font-size: small;
 }
 .comment-section{
     margin-top: 2%;

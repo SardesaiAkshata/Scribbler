@@ -24,6 +24,8 @@ body{
     transition: 0.5s ease-out;
 }
 
+ /* Styling for header */
+
 header{
     display: flex;
     align-items: center;
@@ -58,6 +60,7 @@ header{
     font-family: sans-serif;
 }
 
+ /* styling for post buttons */
 
 .post-btn{
     position: absolute;
@@ -155,6 +158,8 @@ header{
 }
 
 
+/* sign in modal */
+
 .sign-in-form{
     transition: 0.5s;
     background-color: white;
@@ -214,6 +219,7 @@ header{
 }
 
 
+/* create post form modal */
 
 .create-post-form{
     transition: 0.5s;

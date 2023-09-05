@@ -1,4 +1,5 @@
 // sign up event
+
 function showsignup(){
     document.querySelector('.sign-up-form').style.top = "50%";
     document.querySelector('.sign-in-form').style.top = "-50%";
@@ -13,7 +14,10 @@ function closesignup(){
     document.querySelector('.overlay').style.zIndex = "-1";
 }
 
+
+
 // sign in event
+
 function showsignin(){
     document.querySelector('.sign-up-form').style.top = "-50%";
     document.querySelector('.sign-in-form').style.top = "50%";
