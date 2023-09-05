@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffeedd;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    margin: 5px;
+}
+
+.logo h1{
+    font-family: 'Montez', cursive; 
+    color: blue;
+}
+
+.logo h2{
+    font-family: 'Ubuntu Mono';
+    font-size: small;
+}
+
+
+.login-btn{
+    position: absolute;
+    right: 0%;
+    margin-right: 15px;
+}
+
+.login-btn button{
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.sign-up-form{
+    transition: 0.5s;
+    background-color: white;
+    padding-bottom: 10px;
+    width: 400px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.signup{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.signup label, .signup input{
+    margin-top: 10px ;
+}
+
+.signup input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    font-family: sans-serif;
+    padding-left: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.signup label{
+    font-family: sans-serif;
+   font-weight: 200;
+}
+
+#sign-up,#sign-in,#create{
+    padding-left:0px;
+    background-color: rgb(59, 212, 39);
+    color: white;
+    margin-top: 30px;    
+}
+
+.form-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color:  rgb(159, 159, 159);
+    font-family: sans-serif;
+}
+
+.form-head h2{
+    font-weight: lighter;
+    font-size: large;
+}
+
+.cross{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    color:  rgb(159, 159, 159);
+}
+.line{
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(123, 123, 123);
+    margin-top: 5px;
+}
+
+
+.sign-in-form{
+    transition: 0.5s;
+    background-color: white;
+    padding-bottom: 10px;
+    width: 400px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.signin{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.signin label, .signin input{
+    margin-top: 10px ;
+}
+
+.signin input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    font-family: sans-serif;
+    padding-left: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.signin label{
+    font-family: sans-serif;
+   font-weight: 200;
+}
+
+.signin p{
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 18px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.signin a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* list of blogs */
+
+.list-items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 2rem;
+    
+}
+
+.items{
+    width: 95%;
+    background-color: white;
+    margin: 15px;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgb(167, 167, 167),
+                1px 1px 10px rgb(167, 167, 167);
+}
+
+.items:hover{ 
+    box-shadow: 1px 1px 20px rgb(137, 137, 137),
+    1px 1px 20px rgb(137, 137, 137);
+}
+
+
+.writter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.content{
+    background-color: #E8E8E8;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 20px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading p ,span{
+    color: grey;
+}
+
+.heading span{
+    cursor: pointer;
+}
+
+.heading span button{
+    border: none;
+    cursor: pointer;
+    background-color: #E8E8E8;
+    color: grey;
+}
+
+.para{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.para span{
+    align-self: self-end;
+    color: grey;
+    cursor: pointer;
+}
+
+.para span button{
+    border: none;
+    cursor: pointer;
+    color: grey;
+    background-color: #E8E8E8;
+}
+
+
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+
+.delete-post{
+    position: absolute;
+    z-index: 5;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.btns{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btns button{
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    color: white;
+}
+
+.yes{
+    background-color: rgb(26, 198, 26);
+    cursor: pointer;
+}
+
+.no{
+    background-color: rgb(255, 43, 43);
+    cursor: pointer;
+}
+
+
+
+
+/* for mobile */
