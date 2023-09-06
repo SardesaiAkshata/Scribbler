@@ -198,7 +198,7 @@ header{
 }
 
 .items{
-    width: 95%;
+    width: 800px;
     background-color: white;
     margin: 15px;
     display: flex;
@@ -210,6 +210,11 @@ header{
 .items:hover{ 
     box-shadow: 1px 1px 20px rgb(137, 137, 137),
     1px 1px 20px rgb(137, 137, 137);
+}
+
+.last {
+    justify-self: center;
+    grid-column: 1 / 3;
 }
 
 
