@@ -111,3 +111,21 @@ function confirmdel(){
     document.querySelector('.overlay').style.opacity = "0";
     document.querySelector('.overlay').style.zIndex = "-1";
 }
+
+// Layout managmenet
+var lastEl = true;
+function lastChildLayout(){
+
+var lastitem = document.querySelector('.list-items').lastElementChild;
+
+if(lastEl){
+   lastEl = false;
+   lastitem.classList.remove('last');
+}
+
+else{
+   lastitem.classList.add('last');
+   lastEl = true;
+}
+
+}
