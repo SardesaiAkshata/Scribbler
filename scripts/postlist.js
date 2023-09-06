@@ -110,6 +110,7 @@ function confirmdel(){
     document.querySelector('.delete-post').style.top = "-100%";
     document.querySelector('.overlay').style.opacity = "0";
     document.querySelector('.overlay').style.zIndex = "-1";
+    lastChildLayout()
 }
 
 // Layout managmenet
